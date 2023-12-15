@@ -11,7 +11,7 @@ import (
 // depend on the H-Bridge you're using.
 type Motor struct {
 	pins [2]Pin
-	pwm  pmw.Group
+	pwm  pwm.Group
 }
 
 // NewMotor returns a *Motor controlled by the given pins. These pins must
