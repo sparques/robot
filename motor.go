@@ -41,7 +41,6 @@ func (m *Motor) SetFloat(vector float32) {
 		vector = 1
 	}
 
-	// always set gnd first, so we don't risk shorting the h-bridge
 	gch, _ := m.pwm.Channel(gnd)
 	m.pwm.Set(gch, 0)
 
